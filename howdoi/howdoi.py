@@ -117,7 +117,7 @@ def _get_search_url(search_engine):
 
 
 def _get_links(query):
-    search_engine = os.getenv('HOWDOI_SEARCH_ENGINE', 'google')
+    search_engine = os.getenv('HOWDOI_SEARCH_ENGINE', 'bing')
     search_url = _get_search_url(search_engine)
 
     result = _get_result(search_url.format(URL, url_quote(query)))
